@@ -1,0 +1,110 @@
+/* Hero */
+
+.hero {
+    .main-header {
+        line-height: $font-size;
+
+        &:hover {
+            font-style: italic;
+        }
+
+        @media screen and (max-width: 320px) {
+            font-size: $font-size / 2;
+            line-height: $font-size / 2;
+        }
+    }
+
+    .illus {
+        width: 14rem;
+    }
+}
+
+/* Arrow */
+
+.arrow {
+    position: relative;
+    top: 4rem;
+    animation-name: rotation;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+
+    @keyframes rotation {
+        0% {
+            transform: translateY(0rem);
+        }
+
+        50% {
+            transform: translateY(5rem);
+        }
+
+        100% {
+            transform: translateY(0rem);
+        }
+    }
+}
+
+/* Chat icon */
+
+.chatLink {
+    position: fixed;
+    top: 85%;
+    right: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 100;
+
+    .chatText {
+        font-size: $font-size / 4;
+        font-weight: 200;
+        display: inline;
+        align-items: center;
+        justify-content: center;
+        padding-right: 1vw;
+        text-decoration: none;
+        color: $first-color-text;
+
+        @media only screen and (max-width: 320px) {
+            display: none;
+        }
+    }
+
+    @media only screen and (max-width: 320px) {
+        right: 0.2rem;
+    }
+}
+
+/* Highlighted projects */
+
+.hlProjects {
+    position: relative;
+    top: 5rem;
+
+    .hl {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+
+        .itemNum {
+            font-family: $main-font;
+            font-size: $font-size / 4;
+            margin-top: 1rem;
+        }
+
+        .itemProj {
+            text-decoration: none;
+            color: $first-color-text;
+
+            &:hover {
+                text-decoration: underline 3px;
+
+            }
+        }
+
+        .desc {
+            font-size: $font-size / 3;
+            line-height: $font-size / 3;
+        }
+    }
+}

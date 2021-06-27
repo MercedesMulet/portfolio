@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Variables */
+/* Generales */
+html {
+  font-size: 10pt;
+  user-select: none; }
+  html body {
+    background-image: linear-gradient(#fff, rgba(234, 253, 26, 0.1)); }
+    html body ul {
+      list-style: none; }
+      html body ul li {
+        text-decoration: none; }
+        html body ul li a {
+          font-family: "Work Sans", sans-serif;
+          font-size: 1.14286rem;
+          text-decoration: none !important;
+          color: #222222; }
+          html body ul li a:hover {
+            color: #6b53e0 !important; }
+    html body .main-header {
+      font-family: "Work Sans", sans-serif;
+      font-size: 8rem;
+      font-weight: 100;
+      color: #222222; }
+    html body .ftTitle {
+      font-family: "Work Sans", sans-serif;
+      font-size: 6rem;
+      font-weight: 200;
+      line-height: 8rem;
+      color: #222222; }
+    html body .second-header {
+      font-family: "Work Sans", sans-serif;
+      font-size: 4rem;
+      font-weight: 500;
+      color: #222222; }
+    html body p {
+      font-family: "Work Sans", sans-serif;
+      font-size: 2.66667rem;
+      font-weight: 200;
+      line-height: 4rem;
+      color: #222222; }
+
+/* Header */
+header .link {
+  margin: auto 2rem !important; }
+
+/* Footer */
+.footer {
+  padding-top: 1rem;
+  margin-bottom: 2rem; }
+  .footer .pFooter {
+    font-family: "Work Sans", sans-serif;
+    font-size: 1.33333rem;
+    font-weight: 300;
+    line-height: 3rem;
+    color: #222222; }
+
+/* Hero */
+.hero .main-header {
+  line-height: 8rem; }
+  .hero .main-header:hover {
+    font-style: italic; }
+  @media screen and (max-width: 320px) {
+    .hero .main-header {
+      font-size: 4rem;
+      line-height: 4rem; } }
+
+.hero .illus {
+  width: 14rem; }
+
+/* Arrow */
+.arrow {
+  position: relative;
+  top: 4rem;
+  animation-name: rotation;
+  animation-timing-function: ease;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite; }
+
+@keyframes rotation {
+  0% {
+    transform: translateY(0rem); }
+  50% {
+    transform: translateY(5rem); }
+  100% {
+    transform: translateY(0rem); } }
+
+/* Chat icon */
+.chatLink {
+  position: fixed;
+  top: 85%;
+  right: 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  z-index: 100; }
+  .chatLink .chatText {
+    font-size: 2rem;
+    font-weight: 200;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    padding-right: 1vw;
+    text-decoration: none;
+    color: #222222; }
+    @media only screen and (max-width: 320px) {
+      .chatLink .chatText {
+        display: none; } }
+  @media only screen and (max-width: 320px) {
+    .chatLink {
+      right: 0.2rem; } }
+
+/* Highlighted projects */
+.hlProjects {
+  position: relative;
+  top: 5rem; }
+  .hlProjects .hl {
+    margin-top: 5rem;
+    margin-bottom: 5rem; }
+    .hlProjects .hl .itemNum {
+      font-family: "Work Sans", sans-serif;
+      font-size: 2rem;
+      margin-top: 1rem; }
+    .hlProjects .hl .itemProj {
+      text-decoration: none;
+      color: #222222; }
+      .hlProjects .hl .itemProj:hover {
+        text-decoration: underline 3px; }
+    .hlProjects .hl .desc {
+      font-size: 2.66667rem;
+      line-height: 2.66667rem; }
+
+/* Pages */
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 5rem;
+  left: auto;
+  margin: auto auto 10rem auto; }
+  .mainContent .ft-about-me {
+    width: 60%;
+    margin-bottom: 10em; }
+    .mainContent .ft-about-me .aContact {
+      font-size: 2.66667rem;
+      font-weight: 300;
+      color: #6b53e0;
+      margin: 0.3em; }
+      .mainContent .ft-about-me .aContact:hover {
+        text-decoration: underline 3px; }
+  .mainContent .carousel {
+    margin-top: 5rem; }
+    .mainContent .carousel .carousel-inner img {
+      margin: auto; }
+  .mainContent .carousel-control-prev-icon {
+    position: relative;
+    left: 8rem; }
+  .mainContent .carousel-control-next-icon {
+    position: relative;
+    right: 8rem; }
+
+/* Chat icon */
+.chatLink {
+  position: fixed;
+  top: 85%;
+  right: 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  z-index: 100; }
+  @media only screen and (max-width: 320px) {
+    .chatLink {
+      right: 0.2rem; } }
+
+/* 404 error page */
+.error-img {
+  width: 15%;
+  margin-top: 5rem;
+  margin-bottom: 10rem; }
+
+.header-404 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 5.33333rem;
+  font-weight: 200;
+  color: #222222;
+  width: 55%;
+  text-align: center; }
+
+.anchor-404 {
+  text-decoration: none !important;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 5rem; }
+  .anchor-404:hover {
+    text-decoration: underline 3px #222222 !important; }
+
+/* Contact Form */
+.form {
+  width: 40vw;
+  position: relative;
+  left: auto;
+  right: auto;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
+  .form .formName {
+    font-family: "Work Sans", sans-serif;
+    height: 30px;
+    width: 40vw;
+    border-radius: 5px;
+    padding-left: 10px; }
+  .form .formEmail {
+    font-family: "Work Sans", sans-serif;
+    height: 30px;
+    width: 40vw;
+    border-radius: 5px;
+    padding-left: 10px; }
+  .form .formText {
+    font-family: "Work Sans", sans-serif;
+    height: 150px;
+    width: 40vw;
+    border-radius: 5px;
+    padding: 10px; }
+  .form .submitButton {
+    font-family: "Work Sans", sans-serif;
+    height: 30px;
+    width: 40vw; }

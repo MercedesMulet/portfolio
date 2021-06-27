@@ -1,0 +1,59 @@
+/* Generales */
+
+html {
+    font-size: 10pt;
+    user-select: none;
+
+    body {
+        background-image: linear-gradient(#fff, rgba(234, 253, 26, 0.1));
+
+        ul {
+            list-style: none;
+
+            li {
+                text-decoration: none;
+
+                a {
+                    font-family: $main-font;
+                    font-size: $font-size / 7;
+                    text-decoration: none !important;
+                    color: $first-color-text;
+
+                    &:hover {
+                        color: $second-color-text !important;
+                    }
+                }
+            }
+        }
+
+        .main-header {
+            font-family: $main-font;
+            font-size: $font-size;
+            font-weight: 100;
+            color: $first-color-text;
+        }
+
+        .ftTitle {
+            font-family: $main-font;
+            font-size: $font-size - 2;
+            font-weight: 200;
+            line-height: $font-size;
+            color: $first-color-text;
+        }
+
+        .second-header {
+            font-family: $main-font;
+            font-size: $font-size / 2;
+            font-weight: 500;
+            color: $first-color-text;
+        }
+
+        p {
+            font-family: $main-font;
+            font-size: $font-size / 3;
+            font-weight: 200;
+            line-height: $font-size / 2;
+            color: $first-color-text;
+        }
+    }
+}

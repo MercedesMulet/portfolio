@@ -1,0 +1,92 @@
+/* Pages */
+
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 5rem;
+    left: auto;
+    margin: auto auto 10rem auto;
+
+
+    .ft-about-me {
+
+        width: 60%;
+        margin-bottom: 10em;
+
+        .aContact {
+            font-size: $font-size / 3;
+            font-weight: 300;
+            color: $second-color-text;
+            margin: 0.3em;
+
+            &:hover {
+                text-decoration: underline 3px;
+            }
+        }
+    }
+
+    .carousel {
+        margin-top: 5rem;
+
+        .carousel-inner {
+            img {
+                margin: auto;
+            }
+        }
+    }
+
+    .carousel-control-prev-icon {
+        position: relative;
+        left: 8rem;
+    }
+
+    .carousel-control-next-icon {
+        position: relative;
+        right: 8rem;
+    }
+}
+
+/* Chat icon */
+
+.chatLink {
+    position: fixed;
+    top: 85%;
+    right: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 100;
+
+    @media only screen and (max-width: 320px) {
+        right: 0.2rem;
+    }
+}
+
+/* 404 error page */
+.error-img { 
+    width: 15%;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+}
+
+.header-404 {
+    font-family: $main-font;
+    font-size: $font-size / 1.5;
+    font-weight: 200;
+    color: $first-color-text;
+    width: 55%;
+    text-align: center;
+}
+
+.anchor-404 {
+    text-decoration: none !important;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+
+    &:hover {
+        text-decoration: underline 3px $first-color-text !important;
+    }
+}

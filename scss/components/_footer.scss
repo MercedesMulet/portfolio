@@ -1,0 +1,14 @@
+/* Footer */
+
+.footer {
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+
+    .pFooter {
+        font-family: $main-font;
+        font-size: $font-size / 6;
+        font-weight: 300;
+        line-height: 3rem;
+        color: $first-color-text;
+    }
+}

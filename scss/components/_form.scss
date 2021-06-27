@@ -1,0 +1,43 @@
+/* Contact Form */
+
+.form {
+    width: 40vw;
+    position: relative;
+    left: auto;
+    right: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    .formName {
+        font-family: $main-font;
+        height: 30px;
+        width: 40vw;
+        border-radius: 5px;
+        padding-left: 10px;
+    }
+
+    .formEmail {
+        font-family: $main-font;
+        height: 30px;
+        width: 40vw;
+        border-radius: 5px;
+        padding-left: 10px;
+    }
+
+    .formText {
+        font-family: $main-font;
+        height: 150px;
+        width: 40vw;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .submitButton {
+        font-family: $main-font;
+        height: 30px;
+        width: 40vw;
+    }
+}
