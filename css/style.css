@@ -96,6 +96,7 @@ header .link {
   justify-content: flex-end;
   z-index: 100; }
   .chatLink .chatText {
+    font-family: "Work Sans", sans-serif;
     font-size: 2rem;
     font-weight: 200;
     display: inline;

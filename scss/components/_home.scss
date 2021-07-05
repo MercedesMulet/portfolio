@@ -57,6 +57,7 @@
     z-index: 100;
 
     .chatText {
+        font-family: $main-font;
         font-size: $font-size / 4;
         font-weight: 200;
         display: inline;
