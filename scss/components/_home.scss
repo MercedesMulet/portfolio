@@ -50,14 +50,15 @@
 .chatLink {
     position: fixed;
     top: 85%;
-    right: 15rem;
+    right: 5rem;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     z-index: 100;
 
     .chatText {
-        font-family: $main-font !important;
+        font-family: 'Work Sans',
+            sans-serif;
         font-size: $font-size / 4;
         font-weight: 200;
         display: inline;
