@@ -5,7 +5,8 @@ html {
   font-size: 10pt;
   user-select: none; }
   html body {
-    background-image: linear-gradient(#fff, rgba(234, 253, 26, 0.1)); }
+    background-image: linear-gradient(#fff, rgba(234, 253, 26, 0.1));
+    font-family: "Work Sans", sans-serif; }
     html body ul {
       list-style: none; }
       html body ul li {
