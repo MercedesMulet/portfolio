@@ -9,8 +9,9 @@
         }
 
         @media screen and (max-width: 320px) {
-            font-size: $font-size / 2;
-            line-height: $font-size / 2;
+            font-size: $font-size / 4;
+            line-height: $font-size / 3;
+            margin-top: 5rem;
         }
     }
 
@@ -47,18 +48,17 @@
 
 /* Chat icon */
 
+
 .chatLink {
     position: fixed;
     top: 85%;
-    margin-right: 0;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     z-index: 100;
 
     .chatText {
-        font-family: 'Work Sans',
-            sans-serif;
+        font-family: 'Work Sans', sans-serif;
         font-size: $font-size / 4;
         font-weight: 200;
         display: inline;
@@ -74,9 +74,11 @@
     }
 
     @media only screen and (max-width: 320px) {
-        right: 0.2rem;
+        right: 0;
     }
 }
+
+
 
 /* Highlighted projects */
 

@@ -17,7 +17,8 @@ html {
           text-decoration: none !important;
           color: #222222; }
           html body ul li a:hover {
-            color: #6b53e0 !important; }
+            color: #6b53e0 !important;
+            cursor: url(../../images/hand-pointer.svg) !important; }
     html body .main-header {
       font-family: "Work Sans", sans-serif;
       font-size: 8rem;
@@ -63,8 +64,9 @@ header .link {
     font-style: italic; }
   @media screen and (max-width: 320px) {
     .hero .main-header {
-      font-size: 4rem;
-      line-height: 4rem; } }
+      font-size: 2rem;
+      line-height: 2.66667rem;
+      margin-top: 5rem; } }
 
 .hero .illus {
   width: 14rem; }
@@ -91,7 +93,6 @@ header .link {
 .chatLink {
   position: fixed;
   top: 85%;
-  margin-right: 0;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -111,7 +112,7 @@ header .link {
         display: none; } }
   @media only screen and (max-width: 320px) {
     .chatLink {
-      right: 0.2rem; } }
+      right: 0; } }
 
 /* Highlighted projects */
 .hlProjects {
@@ -162,19 +163,6 @@ header .link {
   .mainContent .carousel-control-next-icon {
     position: relative;
     right: 8rem; }
-
-/* Chat icon */
-.chatLink {
-  position: fixed;
-  top: 85%;
-  right: 25rem;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  z-index: 100; }
-  @media only screen and (max-width: 320px) {
-    .chatLink {
-      right: 0.2rem; } }
 
 /* 404 error page */
 .error-img {

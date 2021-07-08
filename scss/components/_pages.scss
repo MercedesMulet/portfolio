@@ -48,22 +48,6 @@
     }
 }
 
-/* Chat icon */
-
-.chatLink {
-    position: fixed;
-    top: 85%;
-    right: 25rem;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    z-index: 100;
-
-    @media only screen and (max-width: 320px) {
-        right: 0.2rem;
-    }
-}
-
 /* 404 error page */
 .error-img { 
     width: 15%;
