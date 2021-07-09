@@ -1,9 +1,4 @@
 /* Generales */
-css {
-    a {
-        cursor: url(../../images/hand-pointer.svg);
-    }
-}
 
 html {
     font-size: 10pt;
@@ -27,6 +22,7 @@ html {
 
                     &:hover {
                         color: $second-color-text !important;
+                        cursor: url(../../images/hand-pointer.svg), pointer;
                     }
                 }
             }
