@@ -57,7 +57,9 @@ html {
     @media only screen and (min-width: 320px) and (max-width: 480px) {
       html body .mm-footer {
         justify-content: center;
-        top: 5rem; } }
+        top: 5rem;
+        margin-bottom: 0 !important;
+        border: red solid 1px; } }
     @media only screen and (min-width: 320px) and (max-width: 480px) {
       html body .pFooter {
         font-size: 0.8rem !important;
