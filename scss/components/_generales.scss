@@ -77,12 +77,17 @@ html {
             color: $first-color-text;
         }
 
+        .mm-footer {
+            @media only screen and (min-width : 320px) and (max-width : 480px) {
+                justify-content: center;
+                top: 5rem;
+            }
+        }
+
         .pFooter {
             @media only screen and (min-width : 320px) and (max-width : 480px) {
                 font-size: $font-size / 10 !important;
                 line-height: $font-size / 8 !important;
-                justify-content: center;
-                top: 5rem;
             }
         }
     }
