@@ -3,6 +3,10 @@
 .hero {
     .main-header {
         line-height: $font-size;
+            font-family: $main-font;
+            font-size: $font-size;
+            font-weight: 100;
+            color: $first-color-text;
 
         &:hover {
             font-style: italic;

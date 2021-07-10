@@ -9,11 +9,29 @@
     left: auto;
     margin: auto auto 10rem auto;
 
+    @media only screen and (min-width : 320px) and (max-width : 480px)  {
+        width: 100%;
+        top: 2rem;
+        margin-bottom: 8rem;
+    }
 
     .ft-about-me {
-
         width: 60%;
         margin-bottom: 10em;
+
+        .pages-header {
+            font-family: $main-font;
+            font-size: $font-size - 2;
+            font-weight: 200;
+            line-height: $font-size;
+            color: $first-color-text;
+
+            @media only screen and (min-width : 320px) and (max-width : 480px)  {
+                font-size: $font-size / 2;
+                line-height: $font-size / 2;
+                margin-bottom: 4rem;
+            }
+        }
 
         .aContact {
             font-size: $font-size / 3;
@@ -24,6 +42,11 @@
             &:hover {
                 text-decoration: underline 3px;
             }
+        }
+
+        @media only screen and (min-width : 320px) and (max-width : 480px)  {
+            width: 95%;
+            margin-bottom: 0;
         }
     }
 

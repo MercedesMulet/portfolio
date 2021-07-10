@@ -40,21 +40,6 @@ html {
             }
         }
 
-        .main-header {
-            font-family: $main-font;
-            font-size: $font-size;
-            font-weight: 100;
-            color: $first-color-text;
-        }
-
-        .ftTitle {
-            font-family: $main-font;
-            font-size: $font-size - 2;
-            font-weight: 200;
-            line-height: $font-size;
-            color: $first-color-text;
-        }
-
         .second-header {
             font-family: $main-font;
             font-size: $font-size / 2;
@@ -80,16 +65,14 @@ html {
         .mm-footer {
             @media only screen and (min-width : 320px) and (max-width : 480px) {
                 justify-content: center;
-                top: 5rem;
-                margin-bottom: 0 !important;
-                border: red solid 1px;
+                top: 1rem;
+                margin-bottom: 1rem !important;
             }
         }
 
         .pFooter {
             @media only screen and (min-width : 320px) and (max-width : 480px) {
-                font-size: $font-size / 10 !important;
-                line-height: $font-size / 8 !important;
+                font-size: $font-size / 9 !important;
             }
         }
     }

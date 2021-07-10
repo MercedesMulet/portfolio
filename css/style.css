@@ -26,17 +26,6 @@ html {
           html body ul li a:hover {
             color: #6b53e0 !important;
             cursor: url(../../images/hand-pointer-01.png), pointer; }
-    html body .main-header {
-      font-family: "Work Sans", sans-serif;
-      font-size: 8rem;
-      font-weight: 100;
-      color: #222222; }
-    html body .ftTitle {
-      font-family: "Work Sans", sans-serif;
-      font-size: 6rem;
-      font-weight: 200;
-      line-height: 8rem;
-      color: #222222; }
     html body .second-header {
       font-family: "Work Sans", sans-serif;
       font-size: 4rem;
@@ -57,13 +46,11 @@ html {
     @media only screen and (min-width: 320px) and (max-width: 480px) {
       html body .mm-footer {
         justify-content: center;
-        top: 5rem;
-        margin-bottom: 0 !important;
-        border: red solid 1px; } }
+        top: 1rem;
+        margin-bottom: 1rem !important; } }
     @media only screen and (min-width: 320px) and (max-width: 480px) {
       html body .pFooter {
-        font-size: 0.8rem !important;
-        line-height: 1rem !important; } }
+        font-size: 0.88889rem !important; } }
 
 /* Header */
 header .link {
@@ -82,7 +69,11 @@ header .link {
 
 /* Hero */
 .hero .main-header {
-  line-height: 8rem; }
+  line-height: 8rem;
+  font-family: "Work Sans", sans-serif;
+  font-size: 8rem;
+  font-weight: 100;
+  color: #222222; }
   .hero .main-header:hover {
     font-style: italic; }
   @media only screen and (min-width: 320px) and (max-width: 480px) {
@@ -198,9 +189,25 @@ header .link {
   top: 5rem;
   left: auto;
   margin: auto auto 10rem auto; }
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    .mainContent {
+      width: 100%;
+      top: 2rem;
+      margin-bottom: 8rem; } }
   .mainContent .ft-about-me {
     width: 60%;
     margin-bottom: 10em; }
+    .mainContent .ft-about-me .pages-header {
+      font-family: "Work Sans", sans-serif;
+      font-size: 6rem;
+      font-weight: 200;
+      line-height: 8rem;
+      color: #222222; }
+      @media only screen and (min-width: 320px) and (max-width: 480px) {
+        .mainContent .ft-about-me .pages-header {
+          font-size: 4rem;
+          line-height: 4rem;
+          margin-bottom: 4rem; } }
     .mainContent .ft-about-me .aContact {
       font-size: 2.66667rem;
       font-weight: 300;
@@ -208,6 +215,10 @@ header .link {
       margin: 0.3em; }
       .mainContent .ft-about-me .aContact:hover {
         text-decoration: underline 3px; }
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      .mainContent .ft-about-me {
+        width: 95%;
+        margin-bottom: 0; } }
   .mainContent .carousel {
     margin-top: 5rem; }
     .mainContent .carousel .carousel-inner img {
