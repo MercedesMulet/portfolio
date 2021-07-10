@@ -33,6 +33,10 @@ html {
             font-size: $font-size;
             font-weight: 100;
             color: $first-color-text;
+
+            @media only screen and (max-width: 320px) {
+                font-size: 5rem;;
+            }
         }
 
         .ftTitle {
@@ -48,6 +52,13 @@ html {
             font-size: $font-size / 2;
             font-weight: 500;
             color: $first-color-text;
+
+            @media only screen and (min-width : 320px) and (max-width : 480px) {
+                font-size: $font-size / 3;
+                line-height: $font-size / 2.5;
+                width: 80%;
+                left: 5rem;
+            }
         }
 
         p {
@@ -56,6 +67,14 @@ html {
             font-weight: 200;
             line-height: $font-size / 2;
             color: $first-color-text;
+        }
+
+        .pFooter {
+            @media only screen and (min-width : 320px) and (max-width : 480px) {
+                font-size: $font-size / 10 !important;
+                line-height: $font-size / 8 !important;
+                justify-content: center;
+            }
         }
     }
 }

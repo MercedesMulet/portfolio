@@ -8,10 +8,18 @@
             font-style: italic;
         }
 
-        @media screen and (max-width: 320px) {
-            font-size: $font-size / 4;
-            line-height: $font-size / 3;
+        @media only screen and (min-width : 320px) and (max-width : 480px)  {
+            font-size: $font-size / 2;
+            line-height: $font-size / 12;
             margin-top: 5rem;
+            margin-bottom: 5rem;
+        }
+
+        @media only screen and (min-width : 768px) and (max-width : 1024px) {
+            font-size: $font-size / 1.5;
+            line-height: $font-size / 12;
+            margin-top: 5rem;
+            margin-bottom: 5rem;
         }
     }
 
@@ -68,13 +76,13 @@
         text-decoration: none;
         color: $first-color-text;
 
-        @media only screen and (max-width: 320px) {
+        @media only screen and (min-width : 320px) and (max-width : 480px) {
             display: none;
         }
     }
 
-    @media only screen and (max-width: 320px) {
-        right: 0;
+    @media only screen and (min-width : 320px) and (max-width : 480px) {
+        right: 3rem;
     }
 }
 
@@ -86,14 +94,27 @@
     position: relative;
     top: 5rem;
 
+    @media only screen and (min-width : 320px) and (max-width : 480px) {
+        top: 0;
+    }
+
     .hl {
         margin-top: 5rem;
         margin-bottom: 5rem;
+
+        @media only screen and (min-width : 320px) and (max-width : 480px) {
+            margin-top: 2rem !important;
+            margin-bottom: 2rem !important;
+        }
 
         .itemNum {
             font-family: $main-font;
             font-size: $font-size / 4;
             margin-top: 1rem;
+
+            @media only screen and (min-width : 320px) and (max-width : 480px) {
+                display: none;
+            }
         }
 
         .itemProj {
@@ -102,13 +123,19 @@
 
             &:hover {
                 text-decoration: underline 3px;
-
             }
         }
 
         .desc {
             font-size: $font-size / 3;
             line-height: $font-size / 3;
+
+            @media only screen and (min-width : 320px) and (max-width : 480px) {
+                font-size: $font-size / 4;
+                line-height: $font-size / 3;
+                width: 80%;
+                left: 5rem;
+            }
         }
     }
 }
