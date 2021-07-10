@@ -9,7 +9,7 @@ html {
     font-family: "Work Sans", sans-serif; }
     @media only screen and (min-width: 320px) and (max-width: 480px) {
       html body {
-        background-image: #f3f3f3; } }
+        background: #faf5ed; } }
     html body ul {
       list-style: none; }
       html body ul li {
@@ -81,7 +81,7 @@ header .link {
     font-style: italic; }
   @media only screen and (min-width: 320px) and (max-width: 480px) {
     .hero .main-header {
-      font-size: 4rem;
+      font-size: 5.33333rem;
       line-height: 0.66667rem;
       margin-top: 5rem;
       margin-bottom: 5rem; } }
