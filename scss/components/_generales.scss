@@ -10,7 +10,6 @@ html {
 
         @media only screen and (min-width : 320px) and (max-width : 480px) {
             background: #faf5ed;
-            height: 100%;
         }
 
         ul {
@@ -79,6 +78,7 @@ html {
                 font-size: $font-size / 10 !important;
                 line-height: $font-size / 8 !important;
                 justify-content: center;
+                top: 5rem;
             }
         }
     }
