@@ -9,7 +9,8 @@ html {
     font-family: "Work Sans", sans-serif; }
     @media only screen and (min-width: 320px) and (max-width: 480px) {
       html body {
-        background: #faf5ed; } }
+        background: #faf5ed;
+        height: 100%; } }
     html body ul {
       list-style: none; }
       html body ul li {
@@ -136,7 +137,7 @@ header .link {
         display: none; } }
   @media only screen and (min-width: 320px) and (max-width: 480px) {
     .chatLink {
-      right: 3rem; } }
+      right: 1rem; } }
 
 /* Highlighted projects */
 .hlProjects {
