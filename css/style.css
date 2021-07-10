@@ -7,6 +7,9 @@ html {
   html body {
     background-image: linear-gradient(#fff, rgba(234, 253, 26, 0.1));
     font-family: "Work Sans", sans-serif; }
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      html body {
+        background-image: #f3f3f3; } }
     html body ul {
       list-style: none; }
       html body ul li {
@@ -24,7 +27,7 @@ html {
       font-size: 8rem;
       font-weight: 100;
       color: #222222; }
-      @media only screen and (max-width: 320px) {
+      @media only screen and (min-width: 320px) and (max-width: 480px) {
         html body .main-header {
           font-size: 5rem; } }
     html body .ftTitle {
