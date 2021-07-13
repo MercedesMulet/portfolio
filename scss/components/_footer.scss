@@ -1,8 +1,20 @@
 /* Footer */
 
-.footer {
+.mm-footer {
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    justify-content: space-around;
+    align-items: center;
+    width: 50rem;
     padding-top: 1rem;
     margin-bottom: 2rem;
+
+    @media only screen and (min-width : 320px) and (max-width : 480px) {
+        justify-content: center;
+        top: 1rem;
+        margin-bottom: 1rem !important;
+    }
 
     .pFooter {
         font-family: $main-font;
@@ -10,5 +22,14 @@
         font-weight: 300;
         line-height: 3rem;
         color: $first-color-text;
+
+        @media only screen and (min-width : 320px) and (max-width : 480px) {
+            font-size: $font-size / 9 !important;
+        }
+    }
+
+    .footerLink {
+        z-index: 1;
     }
 }
+

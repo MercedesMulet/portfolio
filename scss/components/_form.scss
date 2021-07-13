@@ -1,8 +1,9 @@
 /* Contact Form */
 
 .form {
-    width: 40vw;
+    /* width: 80%; */
     position: relative;
+    width: 60%;
     left: auto;
     right: auto;
     margin: auto;
@@ -10,34 +11,59 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 8rem;
 
     .formName {
         font-family: $main-font;
-        height: 30px;
-        width: 40vw;
-        border-radius: 5px;
+        height: 48px;
+        width: 100%;
         padding-left: 10px;
+        background-color: transparent;
+        border-radius: 0;
+        border: 0.5px black solid;
     }
 
     .formEmail {
         font-family: $main-font;
-        height: 30px;
-        width: 40vw;
-        border-radius: 5px;
+        height: 48px;
+        width: 100%;
         padding-left: 10px;
+        background-color: transparent;
+        border-radius: 0;
+        border: 0.5px black solid;
     }
 
     .formText {
         font-family: $main-font;
-        height: 150px;
-        width: 40vw;
-        border-radius: 5px;
+        height: 160px;
+        width: 100%;
         padding: 10px;
+        background-color: transparent;
+        border-radius: 0;
+        border: 0.5px black solid;
     }
 
     .submitButton {
         font-family: $main-font;
-        height: 30px;
-        width: 40vw;
+        height: 48px;
+        width: 100%;
+        border-radius: 0;
+        border: 0.5px $second-color-text;
+        background-color: $first-color-text;
+        color: $bg-color;
+        text-transform: uppercase;
     }
+
+    @media only screen and (min-width : 320px) and (max-width : 480px)  {
+        width: 100%;
+        padding-top: 0;
+        padding-bottom: 5rem;
+    }
+
+    @media only screen and (min-width : 768px) and (max-width : 1024px) {
+        width: 100%;
+        padding-top: 0;
+        padding-bottom: 5rem;
+      }
 }

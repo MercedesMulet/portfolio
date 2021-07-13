@@ -10,6 +10,9 @@ html {
     @media only screen and (min-width: 320px) and (max-width: 480px) {
       html body {
         background: #faf5ed; } }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      html body {
+        background: #faf5ed; } }
     html body .mm-navbar {
       margin-top: 1.5rem !important; }
     html body .mm-nav-div {
@@ -43,29 +46,37 @@ html {
       font-weight: 200;
       line-height: 4rem;
       color: #222222; }
-    @media only screen and (min-width: 320px) and (max-width: 480px) {
-      html body .mm-footer {
-        justify-content: center;
-        top: 1rem;
-        margin-bottom: 1rem !important; } }
-    @media only screen and (min-width: 320px) and (max-width: 480px) {
-      html body .pFooter {
-        font-size: 0.88889rem !important; } }
 
 /* Header */
 header .link {
   margin: auto 2rem !important; }
 
 /* Footer */
-.footer {
+.mm-footer {
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  justify-content: space-around;
+  align-items: center;
+  width: 50rem;
   padding-top: 1rem;
   margin-bottom: 2rem; }
-  .footer .pFooter {
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    .mm-footer {
+      justify-content: center;
+      top: 1rem;
+      margin-bottom: 1rem !important; } }
+  .mm-footer .pFooter {
     font-family: "Work Sans", sans-serif;
     font-size: 1.33333rem;
     font-weight: 300;
     line-height: 3rem;
     color: #222222; }
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      .mm-footer .pFooter {
+        font-size: 0.88889rem !important; } }
+  .mm-footer .footerLink {
+    z-index: 1; }
 
 /* Hero */
 .hero .main-header {
@@ -188,23 +199,36 @@ header .link {
   position: relative;
   top: 5rem;
   left: auto;
-  margin: auto auto 10rem auto; }
+  margin: auto auto 10rem auto;
+  /* About me Page */
+  /* Carousel */ }
   @media only screen and (min-width: 320px) and (max-width: 480px) {
     .mainContent {
       width: 100%;
       top: 2rem;
       margin-bottom: 8rem; } }
+  .mainContent .ft .pages-header {
+    font-family: "Work Sans", sans-serif;
+    font-size: 6rem;
+    font-weight: 200;
+    line-height: 8rem;
+    color: #222222; }
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      .mainContent .ft .pages-header {
+        font-size: 4rem;
+        line-height: 4rem;
+        margin-bottom: 4rem; } }
   .mainContent .ft-about-me {
     width: 60%;
     margin-bottom: 10em; }
-    .mainContent .ft-about-me .pages-header {
+    .mainContent .ft-about-me .about-header {
       font-family: "Work Sans", sans-serif;
       font-size: 6rem;
       font-weight: 200;
       line-height: 8rem;
       color: #222222; }
       @media only screen and (min-width: 320px) and (max-width: 480px) {
-        .mainContent .ft-about-me .pages-header {
+        .mainContent .ft-about-me .about-header {
           font-size: 4rem;
           line-height: 4rem;
           margin-bottom: 4rem; } }
@@ -221,16 +245,11 @@ header .link {
         margin-bottom: 0; } }
   .mainContent .carousel {
     margin-top: 5rem; }
-    .mainContent .carousel .carousel-inner img {
-      margin: auto; }
-  .mainContent .carousel-control-prev-icon {
-    position: relative;
-    left: 8rem; }
-  .mainContent .carousel-control-next-icon {
-    position: relative;
-    right: 8rem; }
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      .mainContent .carousel {
+        width: 100%; } }
 
-/* 404 error page */
+/* 404 Error Page */
 .error-img {
   width: 15%;
   margin-top: 5rem;
@@ -254,34 +273,58 @@ header .link {
 
 /* Contact Form */
 .form {
-  width: 40vw;
+  /* width: 80%; */
   position: relative;
+  width: 60%;
   left: auto;
   right: auto;
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center; }
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 8rem; }
   .form .formName {
     font-family: "Work Sans", sans-serif;
-    height: 30px;
-    width: 40vw;
-    border-radius: 5px;
-    padding-left: 10px; }
+    height: 48px;
+    width: 100%;
+    padding-left: 10px;
+    background-color: transparent;
+    border-radius: 0;
+    border: 0.5px black solid; }
   .form .formEmail {
     font-family: "Work Sans", sans-serif;
-    height: 30px;
-    width: 40vw;
-    border-radius: 5px;
-    padding-left: 10px; }
+    height: 48px;
+    width: 100%;
+    padding-left: 10px;
+    background-color: transparent;
+    border-radius: 0;
+    border: 0.5px black solid; }
   .form .formText {
     font-family: "Work Sans", sans-serif;
-    height: 150px;
-    width: 40vw;
-    border-radius: 5px;
-    padding: 10px; }
+    height: 160px;
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 0;
+    border: 0.5px black solid; }
   .form .submitButton {
     font-family: "Work Sans", sans-serif;
-    height: 30px;
-    width: 40vw; }
+    height: 48px;
+    width: 100%;
+    border-radius: 0;
+    border: 0.5px #6b53e0;
+    background-color: #222222;
+    color: #faf5ed;
+    text-transform: uppercase; }
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    .form {
+      width: 100%;
+      padding-top: 0;
+      padding-bottom: 5rem; } }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .form {
+      width: 100%;
+      padding-top: 0;
+      padding-bottom: 5rem; } }

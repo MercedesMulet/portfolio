@@ -9,7 +9,11 @@ html {
         font-family: $main-font;
 
         @media only screen and (min-width : 320px) and (max-width : 480px) {
-            background: #faf5ed;
+            background: $bg-color;
+        }
+
+        @media only screen and (min-width : 768px) and (max-width : 1024px) {
+            background: $bg-color;
         }
 
         .mm-navbar {
@@ -60,20 +64,6 @@ html {
             font-weight: 200;
             line-height: $font-size / 2;
             color: $first-color-text;
-        }
-
-        .mm-footer {
-            @media only screen and (min-width : 320px) and (max-width : 480px) {
-                justify-content: center;
-                top: 1rem;
-                margin-bottom: 1rem !important;
-            }
-        }
-
-        .pFooter {
-            @media only screen and (min-width : 320px) and (max-width : 480px) {
-                font-size: $font-size / 9 !important;
-            }
         }
     }
 }
