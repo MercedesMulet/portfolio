@@ -1,12 +1,18 @@
 /* Generales */
 
 html {
-    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     user-select: none;
+    border: 1px red solid;
     
     body {
         background-image: linear-gradient(#fff, rgba(234, 253, 26, 0.1));
         font-family: $main-font;
+        /* overflow: auto; */
+        min-height: 100vh;
+        border: 1px red solid;
 
         @media only screen and (min-width : 320px) and (max-width : 480px) {
             background: $bg-color;

@@ -2,11 +2,17 @@
 /* Variables */
 /* Generales */
 html {
-  font-size: 10pt;
-  user-select: none; }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  border: 1px red solid; }
   html body {
     background-image: linear-gradient(#fff, rgba(234, 253, 26, 0.1));
-    font-family: "Work Sans", sans-serif; }
+    font-family: "Work Sans", sans-serif;
+    /* overflow: auto; */
+    min-height: 100vh;
+    border: 1px red solid; }
     @media only screen and (min-width: 320px) and (max-width: 480px) {
       html body {
         background: #faf5ed; } }
@@ -48,6 +54,10 @@ html {
       color: #222222; }
 
 /* Header */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  header {
+    margin-top: 0; } }
+
 header .link {
   margin: auto 2rem !important; }
 
@@ -60,12 +70,15 @@ header .link {
   align-items: center;
   width: 50rem;
   padding-top: 1rem;
-  margin-bottom: 2rem; }
+  margin-top: 4rem;
+  border: 1px solid red; }
   @media only screen and (min-width: 320px) and (max-width: 480px) {
     .mm-footer {
-      justify-content: center;
+      display: grid;
+      grid-template-rows: 1fr 1fr;
       top: 1rem;
-      margin-bottom: 1rem !important; } }
+      margin-bottom: 1rem !important;
+      width: 80%; } }
   .mm-footer .pFooter {
     font-family: "Work Sans", sans-serif;
     font-size: 1.33333rem;
@@ -89,15 +102,15 @@ header .link {
     font-style: italic; }
   @media only screen and (min-width: 320px) and (max-width: 480px) {
     .hero .main-header {
-      font-size: 5.33333rem;
+      font-size: 4rem;
       line-height: 0.8rem;
-      margin-top: 5rem;
+      margin-top: 2rem;
       margin-bottom: 5rem;
-      margin-left: 0.5rem; } }
+      margin-left: 1rem; } }
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .hero .main-header {
       font-size: 5.33333rem;
-      line-height: 0.66667rem; } }
+      line-height: 5.33333rem; } }
 
 .hero .illus {
   width: 14rem;
@@ -168,8 +181,7 @@ header .link {
     margin-bottom: 5rem; }
     @media only screen and (min-width: 320px) and (max-width: 480px) {
       .hlProjects .hl {
-        margin-top: 2rem !important;
-        margin-bottom: 2rem !important; } }
+        margin: 2rem 0 !important; } }
     .hlProjects .hl .itemNum {
       font-family: "Work Sans", sans-serif;
       font-size: 2rem;
@@ -190,7 +202,8 @@ header .link {
           font-size: 2rem;
           line-height: 2.66667rem;
           width: 80%;
-          left: 5rem; } }
+          left: 5rem;
+          margin: 2rem 0 !important; } }
 
 /* Pages */
 .mainContent {

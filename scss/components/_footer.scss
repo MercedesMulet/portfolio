@@ -8,12 +8,15 @@
     align-items: center;
     width: 50rem;
     padding-top: 1rem;
-    margin-bottom: 2rem;
+    margin-top: 4rem;
+    border: 1px solid red;
 
     @media only screen and (min-width : 320px) and (max-width : 480px) {
-        justify-content: center;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
         top: 1rem;
         margin-bottom: 1rem !important;
+        width: 80%;
     }
 
     .pFooter {
