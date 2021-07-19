@@ -10,7 +10,6 @@ html {
   html body {
     background-image: linear-gradient(#fff, rgba(234, 253, 26, 0.1));
     font-family: "Work Sans", sans-serif;
-    /* overflow: auto; */
     min-height: 100vh;
     border: 1px red solid; }
     @media only screen and (min-width: 320px) and (max-width: 480px) {
