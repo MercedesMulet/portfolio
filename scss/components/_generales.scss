@@ -49,5 +49,9 @@ html {
             color: $first-color-text;
             margin: 0;
         }
+
+        a {
+            cursor: url(../../images/hand-pointer-01.png), pointer;;
+        }
     }
 }

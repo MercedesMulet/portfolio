@@ -37,6 +37,8 @@ html {
       font-weight: 200;
       color: #222222;
       margin: 0; }
+    html body a {
+      cursor: url(../../images/hand-pointer-01.png), pointer; }
 
 /* Header */
 header {
