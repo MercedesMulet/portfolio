@@ -411,7 +411,8 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center; }
+  align-items: center;
+  margin-top: 9rem; }
   .form .formName {
     font-family: "Work Sans", sans-serif;
     height: 48px;
