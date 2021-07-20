@@ -1,31 +1,63 @@
 /* Pages */
 
-.mainContent {
+.main-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
     top: 5rem;
     left: auto;
-    margin: auto auto 10rem auto;
 
     @media only screen and (min-width : 320px) and (max-width : 480px)  {
         width: 100%;
         top: 2rem;
-        margin-bottom: 8rem;
+    }
+
+    @media only screen and (min-width : 768px) and (max-width : 1024px)  {
+        width: 100%;
+        top: 2rem;
+    }
+
+    @media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape) {
+        padding: 0 4%;    
     }
 
     .ft {
+        margin-top: 1rem;
+
+        @media only screen and (min-width : 320px) and (max-width : 480px)  {
+            padding: 0 4%;
+        }
+
+        @media only screen and (min-width : 768px) and (max-width : 1024px)  {
+            padding: 0 10%;
+        }
+
+        @media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape) {
+            padding: 0 4%;    
+        }
+
+        @media only screen and (min-width : 1024px) {
+            margin-top: 1.5rem;
+        }
+
         .pages-header {
             font-family: $main-font;
-            font-size: $font-size - 2;
+            font-size: $font-size * 4;
+            line-height: $font-size * 4;
             font-weight: 200;
-            line-height: $font-size;
             color: $first-color-text;
 
             @media only screen and (min-width : 320px) and (max-width : 480px)  {
-                font-size: $font-size / 2;
-                line-height: $font-size / 2;
+                font-size: $font-size * 4;
+                line-height: $font-size * 4;
+                margin-bottom: 2rem;
+            }
+
+            @media only screen and (min-width : 768px) and (max-width : 1024px)  {
+                font-size: $font-size * 6;
+                line-height: $font-size * 6;
+                margin-top: 2rem;
                 margin-bottom: 4rem;
             }
         }
@@ -34,37 +66,60 @@
     /* About me Page */
 
     .ft-about-me {
-        width: 60%;
-        margin-bottom: 10em;
+        padding: 0 8rem;
+
+        @media only screen and (min-width : 320px) and (max-width : 480px)  {
+            padding: 0 4%;
+        }
+
+        @media only screen and (min-width : 768px) and (max-width : 1024px)  {
+            padding: 0 10%;
+        }
+
+        @media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape) {
+            padding: 0 4%;    
+        }
+
+        @media only screen and (min-width : 1024px) {
+            margin-top: 1.5rem;
+        }
 
         .about-header {
             font-family: $main-font;
-            font-size: $font-size - 2;
+            font-size: $font-size * 4;
+            line-height: $font-size * 4;
             font-weight: 200;
-            line-height: $font-size;
             color: $first-color-text;
 
             @media only screen and (min-width : 320px) and (max-width : 480px)  {
-                font-size: $font-size / 2;
-                line-height: $font-size / 2;
-                margin-bottom: 4rem;
+                font-size: $font-size * 4;
+                line-height: $font-size * 4;
+                margin-bottom: 2rem;
+            }
+
+            @media only screen and (min-width : 768px) and (max-width : 1024px)  {
+                font-size: $font-size * 6;
+                line-height: $font-size * 6;
+                margin-top: 2rem;
             }
         }
 
-        .aContact {
-            font-size: $font-size / 3;
-            font-weight: 300;
-            color: $second-color-text;
-            margin: 0.3em;
+        .about-p {
+            margin-top: 2rem;
+            padding: 0 0.4rem;
 
-            &:hover {
-                text-decoration: underline 3px;
+            .aContact {
+                font-size: $font-size * 2;
+                line-height: $font-size * 3;
+                font-weight: 300;
+                color: $second-color-text;
+                margin: 0.3em;
+                text-decoration: none;
+    
+                &:hover {
+                    text-decoration: underline 2px;
+                }
             }
-        }
-
-        @media only screen and (min-width : 320px) and (max-width : 480px)  {
-            width: 95%;
-            margin-bottom: 0;
         }
     }
 
@@ -75,6 +130,7 @@
 
         @media only screen and (min-width : 320px) and (max-width : 480px)  {
             width: 100%;
+            margin-bottom: 2rem;
         }
     }
 }
