@@ -5,13 +5,13 @@ html {
     padding: 0;
     box-sizing: border-box;
     user-select: none;
-    border: 1px red solid;
+    /* border: 1px red solid; */
     
     body {
         background-image: linear-gradient(#fff, rgba(234, 253, 26, 0.1));
         font-family: $main-font;
         min-height: 100vh;
-        border: 1px red solid;
+        /* border: 1px red solid; */
 
         @media only screen and (min-width : 320px) and (max-width : 480px) {
             background: $bg-color;
@@ -19,14 +19,6 @@ html {
 
         @media only screen and (min-width : 768px) and (max-width : 1024px) {
             background: $bg-color;
-        }
-
-        .mm-navbar {
-            margin-top: 1.5rem !important;
-        }
-
-        .mm-nav-div {
-            padding: 0;
         }
 
         ul {
@@ -37,35 +29,21 @@ html {
 
                 a {
                     font-family: $main-font;
-                    font-size: $font-size / 7;
+                    font-size: $font-size;
                     text-decoration: none !important;
                     color: $first-color-text;
+                    cursor: url(../../images/hand-pointer-01.png), pointer;
 
                     &:hover {
                         color: $second-color-text !important;
-                        cursor: url(../../images/hand-pointer-01.png), pointer;
                     }
                 }
             }
         }
 
-        .second-header {
-            font-family: $main-font;
-            font-size: $font-size / 2;
-            font-weight: 500;
-            color: $first-color-text;
-
-            @media only screen and (min-width : 320px) and (max-width : 480px) {
-                font-size: $font-size / 3;
-                line-height: $font-size / 2.5;
-                width: 80%;
-                left: 5rem;
-            }
-        }
-
         p {
             font-family: $main-font;
-            font-size: $font-size / 3;
+            font-size: $font-size;
             font-weight: 200;
             line-height: $font-size / 2;
             color: $first-color-text;

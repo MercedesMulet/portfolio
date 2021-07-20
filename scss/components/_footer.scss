@@ -1,38 +1,48 @@
 /* Footer */
 
 .mm-footer {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-self: center;
     justify-content: space-around;
     align-items: center;
-    width: 50rem;
+    width: 35rem;
     padding-top: 1rem;
     margin-top: 4rem;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
     @media only screen and (min-width : 320px) and (max-width : 480px) {
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        top: 1rem;
-        margin-bottom: 1rem !important;
-        width: 80%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;        
+        padding: 0 1rem;
+        margin-top: 1rem;
+        margin-bottom: .5rem !important;
+        width: 100vw;
     }
 
     .pFooter {
         font-family: $main-font;
-        font-size: $font-size / 6;
+        font-size: $font-size;
         font-weight: 300;
         line-height: 3rem;
         color: $first-color-text;
 
         @media only screen and (min-width : 320px) and (max-width : 480px) {
-            font-size: $font-size / 9 !important;
+            font-size: $font-size / 1.2 !important;
+            line-height: 2rem;
         }
     }
 
-    .footerLink {
+    .footer-link {
+        margin-right: 2rem;
         z-index: 1;
+
+        @media only screen and (min-width : 320px) and (max-width : 480px) {
+            margin-right: .5rem;
+        }
+
     }
 }
 

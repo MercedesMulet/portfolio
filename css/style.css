@@ -6,128 +6,137 @@ html {
   padding: 0;
   box-sizing: border-box;
   user-select: none;
-  border: 1px red solid; }
+  /* border: 1px red solid; */ }
   html body {
     background-image: linear-gradient(#fff, rgba(234, 253, 26, 0.1));
     font-family: "Work Sans", sans-serif;
     min-height: 100vh;
-    border: 1px red solid; }
+    /* border: 1px red solid; */ }
     @media only screen and (min-width: 320px) and (max-width: 480px) {
       html body {
         background: #faf5ed; } }
     @media only screen and (min-width: 768px) and (max-width: 1024px) {
       html body {
         background: #faf5ed; } }
-    html body .mm-navbar {
-      margin-top: 1.5rem !important; }
-    html body .mm-nav-div {
-      padding: 0; }
     html body ul {
       list-style: none; }
       html body ul li {
         text-decoration: none; }
         html body ul li a {
           font-family: "Work Sans", sans-serif;
-          font-size: 1.14286rem;
+          font-size: 1rem;
           text-decoration: none !important;
-          color: #222222; }
+          color: #222222;
+          cursor: url(../../images/hand-pointer-01.png), pointer; }
           html body ul li a:hover {
-            color: #6b53e0 !important;
-            cursor: url(../../images/hand-pointer-01.png), pointer; }
-    html body .second-header {
-      font-family: "Work Sans", sans-serif;
-      font-size: 4rem;
-      font-weight: 500;
-      color: #222222; }
-      @media only screen and (min-width: 320px) and (max-width: 480px) {
-        html body .second-header {
-          font-size: 2.66667rem;
-          line-height: 3.2rem;
-          width: 80%;
-          left: 5rem; } }
+            color: #6b53e0 !important; }
     html body p {
       font-family: "Work Sans", sans-serif;
-      font-size: 2.66667rem;
+      font-size: 1rem;
       font-weight: 200;
-      line-height: 4rem;
+      line-height: 0.5rem;
       color: #222222; }
 
 /* Header */
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-  header {
-    margin-top: 0; } }
-
-header .link {
-  margin: auto 2rem !important; }
+header {
+  padding: 0 8rem; }
+  header .mm-navbar .mm-nav-div {
+    padding: 0; }
+    header .mm-navbar .mm-nav-div a {
+      margin-left: 2rem; }
+    header .mm-navbar .mm-nav-div mm-btn-mobile {
+      border: 0; }
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    header {
+      padding: 0 1rem;
+      margin-top: 0.5rem;
+      margin-left: 0.2rem; } }
 
 /* Footer */
 .mm-footer {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-self: center;
   justify-content: space-around;
   align-items: center;
-  width: 50rem;
+  width: 35rem;
   padding-top: 1rem;
   margin-top: 4rem;
-  border: 1px solid red; }
+  /* border: 1px solid red; */ }
   @media only screen and (min-width: 320px) and (max-width: 480px) {
     .mm-footer {
-      display: grid;
-      grid-template-rows: 1fr 1fr;
-      top: 1rem;
-      margin-bottom: 1rem !important;
-      width: 80%; } }
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      padding: 0 1rem;
+      margin-top: 1rem;
+      margin-bottom: .5rem !important;
+      width: 100vw; } }
   .mm-footer .pFooter {
     font-family: "Work Sans", sans-serif;
-    font-size: 1.33333rem;
+    font-size: 1rem;
     font-weight: 300;
     line-height: 3rem;
     color: #222222; }
     @media only screen and (min-width: 320px) and (max-width: 480px) {
       .mm-footer .pFooter {
-        font-size: 0.88889rem !important; } }
-  .mm-footer .footerLink {
+        font-size: 0.83333rem !important;
+        line-height: 2rem; } }
+  .mm-footer .footer-link {
+    margin-right: 2rem;
     z-index: 1; }
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      .mm-footer .footer-link {
+        margin-right: .5rem; } }
 
 /* Hero */
-.hero .main-header {
-  line-height: 8rem;
-  font-family: "Work Sans", sans-serif;
-  font-size: 8rem;
-  font-weight: 100;
-  color: #222222; }
-  .hero .main-header:hover {
-    font-style: italic; }
-  @media only screen and (min-width: 320px) and (max-width: 480px) {
-    .hero .main-header {
-      font-size: 4rem;
-      line-height: 0.8rem;
-      margin-top: 2rem;
+.hero {
+  /* border: 1px red solid; */ }
+  .hero .main-header {
+    font-family: "Work Sans", sans-serif;
+    font-size: 7rem;
+    line-height: 7rem;
+    font-weight: 100;
+    color: #222222;
+    margin-left: 8rem;
+    /* border: 1px red solid; */ }
+    .hero .main-header:hover {
+      font-style: italic; }
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      .hero .main-header {
+        font-size: 4rem;
+        line-height: 1rem;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        margin-left: 1rem; } }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      .hero .main-header {
+        font-size: 0.66667rem;
+        line-height: 0.66667rem; } }
+  .hero .illus {
+    width: 50%;
+    height: auto; }
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      .hero .illus {
+        width: 60vw;
+        height: auto;
+        margin-left: .5rem; } }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      .hero .illus {
+        width: 80vw;
+        height: auto; } }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .hero {
+      margin-top: 5rem;
       margin-bottom: 5rem;
-      margin-left: 1rem; } }
-  @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .hero .main-header {
-      font-size: 5.33333rem;
-      line-height: 5.33333rem; } }
-
-.hero .illus {
-  width: 14rem;
-  height: auto; }
-  @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .hero .illus {
-      left: 0.5rem !important; } }
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .hero {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    margin-left: 0.5rem; } }
+      margin-left: 0.5rem; } }
 
 /* Arrow */
 .arrow {
   position: relative;
-  top: 4rem;
+  top: 3rem;
+  margin-left: 8rem;
   animation-name: rotation;
   animation-timing-function: ease;
   animation-duration: 2s;
@@ -141,23 +150,23 @@ header .link {
     transform: translateY(5rem); }
   100% {
     transform: translateY(0rem); } }
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    .arrow {
+      margin-left: 1rem; } }
 
 /* Chat icon */
 .chatLink {
   position: fixed;
   top: 85%;
+  right: 8rem;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
   z-index: 100; }
   .chatLink .chatText {
     font-family: 'Work Sans', sans-serif;
-    font-size: 2rem;
-    font-weight: 200;
-    display: inline;
-    align-items: center;
-    justify-content: center;
-    padding-right: 1vw;
+    font-size: 1rem;
+    font-weight: 300;
+    padding-right: .5rem;
     text-decoration: none;
     color: #222222; }
     @media only screen and (min-width: 320px) and (max-width: 480px) {
@@ -169,15 +178,16 @@ header .link {
 
 /* Highlighted projects */
 .hlProjects {
-  position: relative;
-  top: 5rem; }
+  margin-top: 12rem;
+  margin-bottom: 6rem;
+  padding: 0 8rem; }
   @media only screen and (min-width: 320px) and (max-width: 480px) {
     .hlProjects {
-      top: 0;
-      bottom: 0; } }
+      margin-top: 11rem;
+      margin-bottom: 0;
+      padding: 0 4rem 1rem 1rem; } }
   .hlProjects .hl {
-    margin-top: 5rem;
-    margin-bottom: 5rem; }
+    margin-bottom: 6rem; }
     @media only screen and (min-width: 320px) and (max-width: 480px) {
       .hlProjects .hl {
         margin: 2rem 0 !important; } }
@@ -187,22 +197,31 @@ header .link {
       margin-top: 1rem; }
       @media only screen and (min-width: 320px) and (max-width: 480px) {
         .hlProjects .hl .itemNum {
-          display: none; } }
+          margin-top: 0;
+          font-size: 1rem;
+          margin-bottom: 0.5rem; } }
     .hlProjects .hl .itemProj {
       text-decoration: none;
       color: #222222; }
       .hlProjects .hl .itemProj:hover {
         text-decoration: underline 3px; }
+      .hlProjects .hl .itemProj .second-header {
+        font-family: "Work Sans", sans-serif;
+        font-size: 4rem;
+        font-weight: 500;
+        color: #222222; }
+        @media only screen and (min-width: 320px) and (max-width: 480px) {
+          .hlProjects .hl .itemProj .second-header {
+            font-size: 2.5rem;
+            line-height: 2.8rem; } }
     .hlProjects .hl .desc {
-      font-size: 2.66667rem;
-      line-height: 2.66667rem; }
+      font-size: 2.5rem;
+      line-height: 3rem; }
       @media only screen and (min-width: 320px) and (max-width: 480px) {
         .hlProjects .hl .desc {
-          font-size: 2rem;
-          line-height: 2.66667rem;
-          width: 80%;
-          left: 5rem;
-          margin: 2rem 0 !important; } }
+          font-size: 1.2rem;
+          line-height: 1.5rem;
+          width: 100%; } }
 
 /* Pages */
 .mainContent {
@@ -222,31 +241,31 @@ header .link {
       margin-bottom: 8rem; } }
   .mainContent .ft .pages-header {
     font-family: "Work Sans", sans-serif;
-    font-size: 6rem;
+    font-size: -1rem;
     font-weight: 200;
-    line-height: 8rem;
+    line-height: 1rem;
     color: #222222; }
     @media only screen and (min-width: 320px) and (max-width: 480px) {
       .mainContent .ft .pages-header {
-        font-size: 4rem;
-        line-height: 4rem;
+        font-size: 0.5rem;
+        line-height: 0.5rem;
         margin-bottom: 4rem; } }
   .mainContent .ft-about-me {
     width: 60%;
     margin-bottom: 10em; }
     .mainContent .ft-about-me .about-header {
       font-family: "Work Sans", sans-serif;
-      font-size: 6rem;
+      font-size: -1rem;
       font-weight: 200;
-      line-height: 8rem;
+      line-height: 1rem;
       color: #222222; }
       @media only screen and (min-width: 320px) and (max-width: 480px) {
         .mainContent .ft-about-me .about-header {
-          font-size: 4rem;
-          line-height: 4rem;
+          font-size: 0.5rem;
+          line-height: 0.5rem;
           margin-bottom: 4rem; } }
     .mainContent .ft-about-me .aContact {
-      font-size: 2.66667rem;
+      font-size: 0.33333rem;
       font-weight: 300;
       color: #6b53e0;
       margin: 0.3em; }
@@ -270,7 +289,7 @@ header .link {
 
 .header-404 {
   font-family: "Work Sans", sans-serif;
-  font-size: 5.33333rem;
+  font-size: 0.66667rem;
   font-weight: 200;
   color: #222222;
   width: 55%;
